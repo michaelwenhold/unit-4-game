@@ -55,3 +55,9 @@ h1 {
     text-align: center;
 }
 
+.btn-primary {
+    width: 150px;
+    height: 150px;
+    border: 5px solid rgb(104, 141, 118);
+}
+
