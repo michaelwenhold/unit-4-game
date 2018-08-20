@@ -1,0 +1,29 @@
+body {
+    background-image: url("https://images.pexels.com/photos/904807/pexels-photo-904807.jpeg?");
+    }
+
+.header {
+    height: 200px;
+    
+}
+
+h1 {
+    background-color: rgb(104, 141, 118);
+    font-size: 75px;
+    height: 200px;
+    text-align: center;
+    line-height: 180px;
+    border-bottom-left-radius: 40% 90%;
+    border-bottom-right-radius: 40% 90%;
+    
+}
+
+.bug1 {
+    margin-left: 38px;
+    border: 5px solid rgb(104, 141, 118);
+}
+
+.bug2 {
+    border: 5px solid rgb(104, 141, 118);
+}
+
