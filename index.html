@@ -35,17 +35,13 @@
 
     <div class="info">
         <div class="row">
-            <div class="offset-2 col-4">
+            <div class="offset-2 col-3">
                 <h2>Wins:</h2>
                 <br>
                 <h2>Losses:</h2>
             </div>
-            <div class="offset-2 col-4">
-                <h2>How to Play</h2>
-                <ul>
-                    <li>Click the 4 bug buttons</li>
-                    <li>Get your score to match the random number</li>
-                </ul>
+            <div class="col-7">
+                <button id="random-button" class="btn">Click to Start</button>
             </div>
         </div>
     </div>
@@ -55,13 +51,14 @@
                 <div class="offset-2 col-4">
                     <h2>Random Number</h2>
                     <div class="numberBox">
-                        12
+                     <!--Random Number-->       
                     </div>
                 </div>
+
                 <div class="offset-2 col-4">
                     <h2>Your Score</h2>
                     <div class="scoreBox">
-                        12
+                     <!--Your Score-->   
                     </div>
                 </div>
             </div>
@@ -70,16 +67,16 @@
     <div class="card-body">
         <div class="row">
             <div class="offset-1 col-2">
-                <input type="image" class="btn-primary" src="assets/images/bug1.jpg" onclick="alert('1')">
+                <input type="image" id="b1" class="btn-primary" src="assets/images/bug1.jpg">
             </div>
             <div class="offset-1 col-2">
-                <input type="image" class="btn-primary" src="assets/images/bug2.jpg" onclick="alert('2')">
+                <input type="image" id="b2" class="btn-primary" src="assets/images/bug2.jpg">
             </div>
             <div class="offset-1 col-2">
-                <input type="image" class="btn-primary" src="assets/images/bug3.jpg" onclick="alert('3')"> 
+                <input type="image" id="b3" class="btn-primary" src="assets/images/bug3.jpg"> 
             </div>
             <div class="offset-1 col-2">
-                <input type="image" class="btn-primary" src="assets/images/bug4.jpg" onclick="alert('4')"> 
+                <input type="image" id="b4" class="btn-primary" src="assets/images/bug4.jpg"> 
             </div>
         </div>
     </div>        
