@@ -23,6 +23,8 @@ $(document).ready(function () {
     let bug3 = Math.floor(Math.random() * 11) + 1
     let bug4 = Math.floor(Math.random() * 11) + 1
 
+    let audio = new Audio("buzz.mp3");
+
 
     //Stat Variables
     let wins = 0;
@@ -90,8 +92,10 @@ $(document).ready(function () {
       else if (yourScore > random) {
         loser();
       }
-    })
 
+     
+    })
+    audio.play();
 
   });
 
