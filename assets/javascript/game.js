@@ -23,25 +23,38 @@ $(document).ready(function () {
     let bug3 = Math.floor(Math.random() * 11) + 1
     let bug4 = Math.floor(Math.random() * 11) + 1
 
-    let audio = new Audio("buzz.mp3");
-
-
-    //Stat Variables
+    //Stats Variables
     let wins = 0;
     let losses = 0;
     let yourScore = 0;
 
-    $(".wins").text("Wins:" + wins);
-    $(".losses").text("Losses:" + losses);
+    $(".wins").html("<div><span>Wins: </span>" + wins + "</div>");
+    $(".losses").html("<div><span>Losses: </span>" + losses + "</div>");
 
-    function winner() {
-      wins++;
-      $(".wins").text(wins);
+    //Reset Function
+    function reset() {
+      random = Math.floor(Math.random() * 101) + 19;
+      $(".numberBox").text(random);
+      yourScore = 0;
+      $(".scoreBox").text(yourScore);
+      bug1 = Math.floor(Math.random() * 11) + 1
+      bug2 = Math.floor(Math.random() * 11) + 1
+      bug3 = Math.floor(Math.random() * 11) + 1
+      bug4 = Math.floor(Math.random() * 11) + 1
     }
 
+    //Winner Function
+    function winner() {
+      wins++;
+      $(".wins").html("<div><span>Wins: </span>" + wins + "</div>");
+      reset();
+    }
+
+    //Loser Function
     function loser() {
       losses++;
-      $(".losses").text(losses);
+      $(".losses").html("<div><span>Losses: </span>" + losses + "</div>");
+      reset();
     }
 
     //Generate random number for each button on click
@@ -95,7 +108,7 @@ $(document).ready(function () {
 
      
     })
-    audio.play();
+    
 
   });
 
